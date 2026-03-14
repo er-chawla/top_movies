@@ -1,4 +1,4 @@
 
-from .movie_form import MovieForm
+from .movie_form import UpdateMovieForm, AddMovieForm
 
-__all__ = ["MovieForm"]
+__all__ = [UpdateMovieForm, AddMovieForm]

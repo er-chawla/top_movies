@@ -26,9 +26,9 @@ class Movie(db.Model):
   
   id: Mapped[int] = mapped_column(primary_key=True, autoincrement=True)
   title: Mapped[str] = mapped_column(String(250), unique=True, nullable=False)
-  year: Mapped[int] = mapped_column(Integer, nullable=False)
+  year: Mapped[int] = mapped_column(Integer, nullable=True)
   description: Mapped[str] = mapped_column(String(800), nullable=True)
   rating: Mapped[float] = mapped_column(Float, nullable=True)
-  ranking: Mapped[int] = mapped_column(Integer, nullable=False)
+  ranking: Mapped[int] = mapped_column(Integer, nullable=True)
   review: Mapped[str] = mapped_column(String(250), nullable=True)
   img_url: Mapped[str] = mapped_column(String(250), nullable=True)

@@ -1,5 +1,5 @@
 from flask import Flask
-from .config import db
+from .dbBase import db
 
 DATABASE_NAME = "movies-collection.db"
 

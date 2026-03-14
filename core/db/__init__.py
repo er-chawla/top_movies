@@ -1,4 +1,5 @@
-from .config import db
+from .dbBase import db
+from .database import SQLiteDb
 
 
-__all__ = [db]
+__all__ = [db, SQLiteDb]
